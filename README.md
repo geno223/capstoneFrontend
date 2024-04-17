@@ -9,7 +9,7 @@ apparel using a shopping cart either through User or Guest access.
 #### Libraries:
 - React
 - React Router
-- Vite
+- SCSS
 ### React Router Routes:
 - Home Page: "/"
   - Display items for sale and link to Mens, Womens & Kidz apparel.
