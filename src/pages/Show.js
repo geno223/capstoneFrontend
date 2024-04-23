@@ -1,6 +1,13 @@
-const Show  = () => {
+const Show = (props) => {
+    console.log(props)
     return(
-        <h1>show</h1>
+        <div>
+            <h3>Helloworld</h3>
+            <h3>Helloworld</h3>
+            <h3>Helloworld</h3>
+            <h5>hello from show</h5>
+        </div>
     )
 }
-export default Show
+
+export default Show;
