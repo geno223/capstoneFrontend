@@ -1,10 +1,35 @@
-import { useLoaderData } from "react-router-dom";
-
+import { Link, useLoaderData } from "react-router-dom";
 
 const Landing = () => {
-    const apparel = useLoaderData
+    const apparel = useLoaderData();
     console.log(apparel)
-    return (<h3>Apparel</h3>)
+
+    if(apparel.isLoading){
+        return <div>Loading...</div>
+    }
+    
+
+    return (
+        <div>
+            <h3>Apparel</h3>
+            {apparel.map(apparel => {
+                return(
+                    <div key={apparel._id} className="apparel">
+                        <Link to={`/${apparel._id}`}>
+                        <h1>{apparel.tops}</h1>
+                        <h1>{apparel.bottoms}</h1>
+                        </Link>
+                        <img src={apparel.image} />
+                        <h1>{apparel.gender}</h1>
+                        
+                        
+                        <h3>Price:${apparel.price}</h3>
+                    </div>
+                )
+            })}
+        </div>
+
+    )
 }
 
 export default Landing;

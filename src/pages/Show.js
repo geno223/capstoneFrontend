@@ -1,11 +1,17 @@
-const Show = (props) => {
-    console.log(props)
+import { useLoaderData } from "react-router-dom";
+
+const Show = () => {
+    const apparel = useLoaderData();
+    console.log(apparel);
+
+    
     return(
-        <div>
-            <h3>Helloworld</h3>
-            <h3>Helloworld</h3>
-            <h3>Helloworld</h3>
-            <h5>hello from show</h5>
+        <div className="apparel">
+           <h1>{apparel.gender}</h1>
+           <h2>{apparel.tops}</h2>
+           <h2>{apparel.bottoms}</h2>
+           <img src={apparel.image}/>
+           <h2>Price:${apparel.price} USD</h2>
         </div>
     )
 }
