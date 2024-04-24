@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link ,useLoaderData } from "react-router-dom";
 
 const Show = () => {
     const apparel = useLoaderData();
@@ -8,11 +8,16 @@ const Show = () => {
     return(
         <div className="apparel">
            <h1>{apparel.gender}</h1>
-           <h2>{apparel.tops}</h2>
-           <h2>{apparel.bottoms}</h2>
+           <h1>{apparel.tops}</h1>
+           <h1>{apparel.bottoms}</h1>
            <img src={apparel.image} alt="img"/>
-           <h2>Price:${apparel.price} USD</h2>
+           <h3>Price:${apparel.price} USD</h3>
+           
+           <Link to="/">
+                <div className="gBack"><button>Go Back</button></div>
+            </Link>
         </div>
+    
     )
 }
 

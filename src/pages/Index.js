@@ -16,9 +16,9 @@ const Landing = () => {
                 return(
                     <div key={apparel._id} className="apparel">
                         <Link to={`/${apparel._id}`}>
-                        <h1>{apparel.gender}</h1>
-                        <h1>{apparel.tops}</h1>
-                        <h1>{apparel.bottoms}</h1>
+                        <h1>{apparel.gender}: {apparel.tops} {apparel.bottoms}</h1>
+                        
+                        
                         </Link>
                         <img src={apparel.image} alt="img"/>
                         

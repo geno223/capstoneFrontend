@@ -1,0 +1,20 @@
+
+//variable in sass start with a dollar sign and can be used at anytime
+$maincolor: hotpink;  
+
+
+// mixins are a collections of rules (varaible) that can be applied 
+@mixin hot-pink-black-letters {
+    background-color: $maincolor;
+    color: black;
+    border: 1px solid black
+}
+
+
+//to use mixins, use the @include keyword followed by the name of the mixin
+h1{
+    @include hot-pink-black-letters();
+}
+h3{
+    @include hot-pink-black-letters;
+}
