@@ -11,16 +11,17 @@ const Landing = () => {
 
     return (
         <div>
-            <h3>Apparel</h3>
+            
             {apparel.map(apparel => {
                 return(
                     <div key={apparel._id} className="apparel">
                         <Link to={`/${apparel._id}`}>
+                        <h1>{apparel.gender}</h1>
                         <h1>{apparel.tops}</h1>
                         <h1>{apparel.bottoms}</h1>
                         </Link>
                         <img src={apparel.image} />
-                        <h1>{apparel.gender}</h1>
+                        
                         
                         
                         <h3>Price:${apparel.price}</h3>
