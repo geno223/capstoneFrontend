@@ -1,6 +1,6 @@
 
 //variable in sass start with a dollar sign and can be used at anytime
-$maincolor: hotpink;  
+$maincolor: rgb(158, 138, 248);  
 
 
 // mixins are a collections of rules (varaible) that can be applied 
@@ -18,3 +18,17 @@ h1{
 h3{
     @include hot-pink-black-letters;
 }
+button:hover {
+    background-color: rgb(87, 147, 236);
+
+}
+.App{
+    margin:0;
+    background-color:rgb(198, 198, 237);
+  }
+  .nav{
+    background-color: rgb(179, 159, 234);
+    text-align: left;
+  }
+
+  

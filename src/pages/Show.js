@@ -14,7 +14,7 @@ const Show = () => {
            <h3>Price:${apparel.price} USD</h3>
            
            <Link to="/">
-                <div className="gBack"><button>Go Back</button></div>
+                <button>Go Back</button>
             </Link>
         </div>
     

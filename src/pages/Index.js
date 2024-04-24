@@ -1,8 +1,12 @@
 import { Link, useLoaderData } from "react-router-dom";
 
+
+
+
 const Landing = () => {
     const apparel = useLoaderData();
     console.log(apparel)
+    
 
     if(apparel.isLoading){
         return <div>Loading...</div>
