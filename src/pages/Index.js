@@ -20,7 +20,7 @@ const Landing = () => {
                         <h1>{apparel.tops}</h1>
                         <h1>{apparel.bottoms}</h1>
                         </Link>
-                        <img src={apparel.image} />
+                        <img src={apparel.image} alt="img"/>
                         
                         
                         

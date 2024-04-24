@@ -10,7 +10,7 @@ const Show = () => {
            <h1>{apparel.gender}</h1>
            <h2>{apparel.tops}</h2>
            <h2>{apparel.bottoms}</h2>
-           <img src={apparel.image}/>
+           <img src={apparel.image} alt="img"/>
            <h2>Price:${apparel.price} USD</h2>
         </div>
     )
