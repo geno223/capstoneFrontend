@@ -4,7 +4,7 @@ $maincolor: rgb(158, 138, 248);
 
 
 // mixins are a collections of rules (varaible) that can be applied 
-@mixin hot-pink-black-letters {
+@mixin purple-black-letters {
     background-color: $maincolor;
     color: black;
     border: 1px solid black
@@ -13,10 +13,10 @@ $maincolor: rgb(158, 138, 248);
 
 //to use mixins, use the @include keyword followed by the name of the mixin
 h1{
-    @include hot-pink-black-letters();
+    @include purple-black-letters();
 }
 h3{
-    @include hot-pink-black-letters;
+   @include purple-black-letters();
 }
 button:hover {
     background-color: rgb(87, 147, 236);
@@ -29,6 +29,10 @@ button:hover {
   .nav{
     background-color: rgb(179, 159, 234);
     text-align: left;
+    border: solid blueviolet;
+  }
+  .footer {
+    
   }
 
   
