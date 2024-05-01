@@ -12,6 +12,7 @@ $maincolor: rgb(87, 147, 232);
     margin: auto;
     border: navy
     
+    
 }
 
 
@@ -20,11 +21,15 @@ h1{
     @include h1();
    
 }
+h1:hover{
+    color: black;
+
+}
 h3{
    color: whitesmoke;
 }
 button:hover {
-    background-color: rgb(87, 147, 236);
+    background-color: rgb(215, 225, 242);
 
 }
 .App{
@@ -39,7 +44,5 @@ button:hover {
     color: whitesmoke;
 
   }
-
-
-
+.apparel{}
   

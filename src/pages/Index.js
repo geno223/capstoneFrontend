@@ -14,7 +14,7 @@ const Landing = () => {
     
 
     return (
-        <div className="container">
+        <div>
             
             {apparel.map((apparel) => {
                 return(
