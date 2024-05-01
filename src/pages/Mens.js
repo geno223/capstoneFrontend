@@ -25,7 +25,11 @@ const Mens = () => {
                 </div>
             )
         })}
-</div>
+        <Link to="/">
+                <button>Go Back</button>
+            </Link>
+        </div>
+
     )
 }
 

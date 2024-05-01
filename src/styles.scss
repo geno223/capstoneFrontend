@@ -1,22 +1,27 @@
 
 //variable in sass start with a dollar sign and can be used at anytime
-$maincolor: rgb(158, 138, 248);  
+$maincolor: rgb(87, 147, 232);  
 
 
 // mixins are a collections of rules (varaible) that can be applied 
-@mixin purple-black-letters {
-    background-color: $maincolor;
-    color: black;
-    border: 1px solid black
+@mixin h1 {
+    
+    display:flex;
+    color: rgb(240, 241, 245);
+    font-size: large;
+    margin: auto;
+    border: navy
+    
 }
 
 
 //to use mixins, use the @include keyword followed by the name of the mixin
 h1{
-    @include purple-black-letters();
+    @include h1();
+   
 }
 h3{
-   @include purple-black-letters();
+   color: whitesmoke;
 }
 button:hover {
     background-color: rgb(87, 147, 236);
@@ -24,16 +29,17 @@ button:hover {
 }
 .App{
     margin:0;
-    background-color:rgb(242, 242, 251);
+    background-color:rgb(92, 157, 247);
     padding-bottom: 650px;
   }
   .nav{
-    background-color: rgb(179, 159, 234);
+    background-color: rgb(124, 169, 237);
     text-align: left;
-    border: solid blueviolet;
+    border: solid rgb(5, 38, 136);
+    color: whitesmoke;
 
   }
-  
-  
+
+
 
   

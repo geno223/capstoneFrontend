@@ -9,7 +9,7 @@ const Main = () => {
     const navigate = useNavigate()    
     return (
         <div>
-          <h1>Apparel</h1>
+          
             <h3>
             <Link to='/signup'><button>Sign Up</button> </Link>
              <Link to='/login'><button>Sign In</button> </Link>

@@ -14,13 +14,14 @@ const Landing = () => {
     
 
     return (
-        <div>
+        <div className="container">
             
             {apparel.map((apparel) => {
                 return(
                     <div key={apparel._id} className="apparel">
                         <Link to={`/${apparel._id}`}>
-                        <h1>{apparel.gender}: {apparel.tops} {apparel.bottoms}</h1>
+                        <h1>{apparel.gender}: {apparel.tops} {apparel.bottoms}</h1> 
+                        <h1>Price:${apparel.price}</h1>
                         
                         
                         </Link>
@@ -28,7 +29,7 @@ const Landing = () => {
                         
                         
                         
-                        <h3>Price:${apparel.price}</h3> 
+                        
                         
                     </div>
                 )
