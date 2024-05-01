@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-
+import Main from "./Main";
 const Header = () => {
+    
     return(
         <nav className="nav">
             <Link to='/'>
@@ -12,8 +13,10 @@ const Header = () => {
             <Link to='/womens'>
                 <div>Womens</div>
             </Link>
+            <Main/>
         </nav>
     )
+    
 }
 
 export default Header;

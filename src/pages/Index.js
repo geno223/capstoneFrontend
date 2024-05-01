@@ -16,7 +16,7 @@ const Landing = () => {
     return (
         <div>
             
-            {apparel.map(apparel => {
+            {apparel.map((apparel) => {
                 return(
                     <div key={apparel._id} className="apparel">
                         <Link to={`/${apparel._id}`}>
@@ -28,7 +28,8 @@ const Landing = () => {
                         
                         
                         
-                        <h3>Price:${apparel.price}</h3>
+                        <h3>Price:${apparel.price}</h3> 
+                        
                     </div>
                 )
             })}

@@ -11,7 +11,7 @@ const Login = () => {
             <label>password</label>
             <input type='password' name='password' placeholder="password"/>
             
-            <input type='submit' value='login'/>
+            <input type='submit' value='sign in'/>
         </Form>
 
         <Link to="/">

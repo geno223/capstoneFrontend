@@ -47,6 +47,7 @@ export const loginAction = async ({request}) => {
     }
     const data = await response.json();
     console.log(data)
+    //saving token to browser local storage
     localStorage.setItem('token', data.token)
 
     return redirect('/')
