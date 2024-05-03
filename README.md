@@ -12,26 +12,35 @@ apparel using a shopping cart either through User or Guest access.
 - SCSS
 ### React Router Routes:
 - Home Page: "/"
-  - Display items for sale and link to Mens, Womens & Kidz apparel.
+  - Display items for sale and link to Mens & Womens  apparel.
 
-- Item Detail Page: "/items/:itemId"
+- Item Detail Page: "/apparel/:apparelId"
   - Display detailed information about a specific item.
 
-- Shopping Cart Page: "/cart"
-  - allow users to add items and checkout.
+- Sign Up:  "/apparel/signup"
+  - allow users to create an account.
+  
+- Sign In:  "/apparel/login"
+  - allow users to sign into account
+ - Mens:  "/apparel/mens"
+  - renders mens apparel
+- Womens:  "/apparel/womens"
+  - renders womens apparel
 
-### React Architecture:
 ### Markdown
 
 - App
   - Header
 
   - Router
-    - HomePage
-    - Item page
-    - Create ItemPage
+    - Index Page
+    - Show Page
+    - Mens page
+    - Womens Page
+    - Sign Up
+    - Sign In
 
-  - Footer
+  
 
 
 
@@ -53,7 +62,7 @@ apparel using a shopping cart either through User or Guest access.
 - DELETE '/:id'
 
 
-## Models (ERD):
+
 
 
 
